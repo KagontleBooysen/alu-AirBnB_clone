@@ -59,7 +59,7 @@ class HBNBCommand(cmd.Cmd):
             print("End of File command: exit the program\n")
 
             def do_show(self, line):
-                """Prints an instance as a string based on the class and id"""    
+             """Prints an instance as a string based on the class and id"""    
         className_line = line.split()
         if len(className_line) == 0:
             print("** class name missing **")
@@ -138,9 +138,9 @@ class HBNBCommand(cmd.Cmd):
 
                 ojb.updated_at = datetime.now()
                 ojb.save()
-               
-               def do_count(self, line):
-        "count instances of the class"
+
+                def do_count(self, line):
+                    "count instances of the class"
         className_line = line.split()
         if className_line[0] not in classGroup:
             return
