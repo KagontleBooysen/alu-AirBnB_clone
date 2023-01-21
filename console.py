@@ -114,7 +114,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
             def do_update(self, line):
-                """Update an instance based on the class name, id, attribute & value"""
+                """Update based on the class name, id, attribute & value"""
         className_line = line.split()
         staticArray = ["id", "created_at", "updated_at"]
         objects = models.storage.all()
@@ -138,7 +138,8 @@ class HBNBCommand(cmd.Cmd):
 
                 ojb.updated_at = datetime.now()
                 ojb.save()
-    def do_count(self, line):
+               
+               def do_count(self, line):
         "count instances of the class"
         className_line = line.split()
         if className_line[0] not in classGroup:
