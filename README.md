@@ -70,7 +70,6 @@ Authors
 
 Kagontle Booysen
 
-Celestin HAKORIMANA
 
 
 
