@@ -38,7 +38,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_create(self, line):
-        """Creates a new BaseModel instance, saves it to the JSON file and prints the id"""
+        """Creates a new BaseModel instance, saves it to the JSON file"""
         if len(line) == 0:
             print("** class name missing **")
             return
@@ -49,14 +49,16 @@ class HBNBCommand(cmd.Cmd):
             instance.save()
         except:
             print("** class doesn't exist **")
-    def help_quit(self):
+   
+   def help_quit(self):
         ''' help_quit '''
         print("Quit command to exit the program\n")
 
     def help_EOF(self):
         """help_EOF"""
-        print("End of File command: exit the program\n")
-    def do_show(self, line):
+       print("End of File command: exit the program\n")
+   
+   def do_show(self, line):
         """Prints an instance as a string based on the class and id"""    
         className_line = line.split()
         if len(className_line) == 0:
@@ -72,7 +74,8 @@ class HBNBCommand(cmd.Cmd):
                 print(models.storage.all()[instance])
             else:
                 print("** no instance found **")
-    def do_destroy(self, line):
+   
+   def do_destroy(self, line):
         """Deletes an instance based on the class and id"""
         className_line = line.split()
         if len(className_line) == 0:
