@@ -76,7 +76,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
                 def do_destroy(self, line):
-        """Deletes an instance based on the class and id"""
+                    """Deletes an instance based on the class and id"""
         className_line = line.split()
         if len(className_line) == 0:
             print("** class name missing **")
@@ -92,8 +92,9 @@ class HBNBCommand(cmd.Cmd):
                 models.storage.save()
             else:
                 print("** no instance found **")
-    def do_all(self, arg):
-        """Prints string representations of instances"""
+
+                def do_all(self, arg):
+                    """Prints string representations of instances"""
         className_line = shlex.split(arg)
         obj_list = []
         if len(className_line) == 0:
@@ -110,8 +111,9 @@ class HBNBCommand(cmd.Cmd):
             print(", ".join(obj_list), end="")
             print("]")
         else:
-            print("** class doesn't exist **")
-    def do_update(self, line):
+          print("** class doesn't exist **")
+   
+   def do_update(self, line):
         """Update an instance based on the class name, id, attribute & value"""
         className_line = line.split()
         staticArray = ["id", "created_at", "updated_at"]
@@ -133,7 +135,8 @@ class HBNBCommand(cmd.Cmd):
             elif className_line[2] not in staticArray:
                 ojb = objects[instance]
                 ojb.__dict__[className_line[2]] = className_line[3]
-                ojb.updated_at = datetime.now()
+               
+               ojb.updated_at = datetime.now()
                 ojb.save()
     def do_count(self, line):
         "count instances of the class"
