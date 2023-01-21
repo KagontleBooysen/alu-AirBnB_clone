@@ -16,7 +16,7 @@ from models.user import User
 import shlex
 
 classGroup = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
+        "Place": Place, "Review": Review, "State": State, "User": User}
 
 
 class HBNBCommand(cmd.Cmd):
@@ -49,12 +49,12 @@ class HBNBCommand(cmd.Cmd):
             instance.save()
         except:
             print("** class doesn't exist **")
-   
-   def help_quit(self):
+
+            def help_quit(self):
         ''' help_quit '''
         print("Quit command to exit the program\n")
 
-    def help_EOF(self):
+        def help_EOF(self):
         """help_EOF"""
        print("End of File command: exit the program\n")
    
