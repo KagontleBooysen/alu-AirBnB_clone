@@ -114,7 +114,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
             def do_update(self, line):
-        """Update an instance based on the class name, id, attribute & value"""
+                """Update an instance based on the class name, id, attribute & value"""
         className_line = line.split()
         staticArray = ["id", "created_at", "updated_at"]
         objects = models.storage.all()
@@ -135,8 +135,8 @@ class HBNBCommand(cmd.Cmd):
             elif className_line[2] not in staticArray:
                 ojb = objects[instance]
                 ojb.__dict__[className_line[2]] = className_line[3]
-               
-               ojb.updated_at = datetime.now()
+
+                ojb.updated_at = datetime.now()
                 ojb.save()
     def do_count(self, line):
         "count instances of the class"
