@@ -1,3 +1,6 @@
+![HBNB-HolbertonAirbnb](https://user-images.githubusercontent.com/106469425/213869129-3cc12e0a-16f9-4f15-ab07-acfb0cd90ba6.png)
+
+
 0x00.AirBnB Clone - The Console
 
 Functionalities of this command interpreter:
@@ -65,10 +68,10 @@ All tests should also pass in non-interactive mode: $ echo "python3 -m unittest 
 
 Authors
 
-KagontleBooysen
+Kagontle Booysen
 
 Celestin HAKORIMANA
 
-![HBNB-HolbertonAirbnb](https://user-images.githubusercontent.com/106469425/213869074-3fc4cb12-3e30-4b6a-bd3d-87743c22a7f8.png)
+
 
 
