@@ -59,7 +59,7 @@ class HBNBCommand(cmd.Cmd):
             print("End of File command: exit the program\n")
 
             def do_show(self, line):
-        """Prints an instance as a string based on the class and id"""    
+                """Prints an instance as a string based on the class and id"""    
         className_line = line.split()
         if len(className_line) == 0:
             print("** class name missing **")
@@ -74,8 +74,8 @@ class HBNBCommand(cmd.Cmd):
                 print(models.storage.all()[instance])
             else:
                 print("** no instance found **")
-   
-   def do_destroy(self, line):
+
+                def do_destroy(self, line):
         """Deletes an instance based on the class and id"""
         className_line = line.split()
         if len(className_line) == 0:
