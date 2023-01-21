@@ -51,12 +51,12 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
             def help_quit(self):
-        ''' help_quit '''
+                ''' help_quit '''
         print("Quit command to exit the program\n")
 
         def help_EOF(self):
-        """help_EOF"""
-       print("End of File command: exit the program\n")
+            """help_EOF"""
+            print("End of File command: exit the program\n")
    
    def do_show(self, line):
         """Prints an instance as a string based on the class and id"""    
