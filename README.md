@@ -48,7 +48,7 @@ EOF all count create destroy help quit show update
 
 Class Models Used
 
-File	Description	Attributes
+<tr> File	Description	Attributes
 base_model.py	The BaseModel class is inherited by other	id, created_at, updated_at
 user.py	User class stores user-related info	email, password, first_name, last_name
 city.py	City class stores city-specific information	state_id, name
@@ -60,7 +60,7 @@ price_by_night, latitude, longitude, amenity_ids
 review.py	Review class stores previous customer reviews	place_id, user_id, text
 and opinions	
 amenity.py	Amenity class stores highlighted amenity	name
-information
+information</tr>
 	
 Tests
 
