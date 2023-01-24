@@ -3,7 +3,7 @@
 
 <b>0x00.AirBnB Clone - The Console</b>
 
-<b><h3>Functionalities of this command interpreter:</h3></b>
+<b><h3><u>Functionalities of this command interpreter:</u></h3></b>
 <ol>
 <li>Create a new object (ex: a new User or a new Place)</li>
 <li>Retrieve an object from a file, a database etc...</li>
@@ -11,10 +11,18 @@
 <li>Update attributes of an object</li>
 <li>Destroy an object</li>
 </ol>
-<b><h3> Environment</h3> </b>
-
-This project is interpreted/tested on Ubuntu 20.04 LTS using python3 (version 3.4.3)
-
+<u><b><h3>Requirements</h3> </b></u>
+<li>Allowed editors: vi, vim, emacs.</li>
+<li>Files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5).</li>
+<li>Files must be executable.</li>
+<li>The length of your files will be tested using wc</li>
+<li>All your test files should be inside a folder tests</li>
+<li>You have to use the unittest module.</li>
+<li>All your test files should be python files (extension: .py).</li>
+<li>All your test files and folders should start by test_.</li>
+<li>All your tests should be executed by using this command: python3 -m unittest discover tests.</li>
+<li>Code should use the PEP 8 style (version 2.7.*).</li>
+<li>Your code should be W3C compliant and validate with W3C-Validator.</li>
 <b><h3>Installation</b></h3>
 <ol>
 <li>Clone this repository: git clone"https://github.com/KagontleBooysen/AirBnB_clone.git"</li>
