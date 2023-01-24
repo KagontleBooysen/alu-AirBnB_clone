@@ -11,7 +11,7 @@ Do operations on objects (count, compute stats, etc...)
 Update attributes of an object
 Destroy an object
 
-Environment
+<b> Environment </b>
 
 This project is interpreted/tested on Ubuntu 20.04 LTS using python3 (version 3.4.3)
 
