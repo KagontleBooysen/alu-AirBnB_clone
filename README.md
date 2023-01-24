@@ -3,7 +3,7 @@
 
 <b>0x00.AirBnB Clone - The Console</b>
 
-<b><h3>Functionalities of this command interpreter:</h3></b>
+<b><h3><u>Functionalities of this command interpreter:</u></h3></b>
 <ol>
 <li>Create a new object (ex: a new User or a new Place)</li>
 <li>Retrieve an object from a file, a database etc...</li>
@@ -11,7 +11,7 @@
 <li>Update attributes of an object</li>
 <li>Destroy an object</li>
 </ol>
-<b><h3> Requirements</h3> </b>
+<u><b><h3>Requirements</h3> </b></u>
 <li>Allowed editors: vi, vim, emacs.</li>
 <li>Files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5).</li>
 <li>Files must be executable.</li>
