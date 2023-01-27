@@ -1,4 +1,4 @@
-![HBNB-HolbertonAirbnb](https://user-images.githubusercontent.com/106469425/213869129-3cc12e0a-16f9-4f15-ab07-acfb0cd90ba6.png)
+![HBNB-HolbertonAirbnb](https://user-images.githubusercontent.com/106469425/213869129-3cc12e0a-16f9-4f15-ab07-acfb0cd90ba6.png
 
 
 <b>0x00.AirBnB Clone - The Console</b>
