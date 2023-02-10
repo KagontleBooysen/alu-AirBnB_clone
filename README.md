@@ -3,6 +3,44 @@
 
 <b>0x00.AirBnB Clone - The Console</b>
 
+### 📝 Description
+***
+__Airbnb__ is an online platform that connects people who have a home to offer, with people who need a place to stay temporarily.
+
+The first stage of the project was where we started to create The AirBnB Clone and we created a shell to manage the AirBnB objects.
+
+This first stage of the project focused on everything related to Python:
+
+`Import`,` Exceptions`, `Class`, `Private attribute`, `Getter / Setter`, `Class method`, `Static method`, `Inheritance`, `Unittest`, `Read / Write file`, `args` and `kwargs`, `Serialization` / `Deserialization` and `JSON`.
+
+Now that you have a command interpreter for managing your AirBnB objects, it’s time to make them alive!
+
+Before developing a big and complex web application, we will build the front end step-by-step.
+
+The first step is to “design” / “sketch” / “prototype” each element:
+* Create simple HTML static pages
+* Style guide
+* Fake contents
+* No Javascript
+* No data loaded from anything
+
+__*HTML*__ (HyperText Markup Language)
+
+Provide structure and meaning to content by defining that content, such as headings, paragraphs, or images. Es the structure of your page, it should be the first thing to write.
+
+__*CSS*__ (Cascading Style Sheets)
+
+It is a presentation language created to style the appearance of content, using, for example, fonts or colors. Is the styling of your page, the design.
+
+Phases of the AirBnB clone project:
+- [x] **The console**
+- [x] **HTML**
+- [ ] MySQL
+- [ ] Fabric
+- [ ] Flask
+- [ ] REST API
+- [ ] Web dynamic
+
 <b><h3><u>Functionalities of this command interpreter:</u></h3></b>
 <ol>
 <li>Create a new object (ex: a new User or a new Place)</li>
@@ -11,6 +49,7 @@
 <li>Update attributes of an object</li>
 <li>Destroy an object</li>
 </ol>
+
 <u><b><h3>Requirements</h3> </b></u>
 <li>Allowed editors: vi, vim, emacs.</li>
 <li>Files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5).</li>
@@ -31,9 +70,6 @@
 <li>Run hbnb(non-interactively): echo "" | ./console.py</li>
 </ol>
 
-<b><h3>Description</b></h3>
-
-This team project is part of the year two curriculum. It is the first step towards building a first full web application: an AirBnB clone. This first step consists of a custom command-line interface for data management,and the base classes for the storage of this data.
 
 <b><h3>Console and Command Usage</h3></b>
 
@@ -162,13 +198,51 @@ EOF all count create destroy help quit show update
 </table>
 	
 	
-<b>Tests</b>	
+<b>Testing</b>	
 
 All the code is tested with the unittest module. The test for the classes are inthetest_models folder and All tests should also pass in non-interactive mode:<ul> $ echo "python3 -m unittest discover tests" | bash</ul>
 	
 <ul>All your tests should be executed by using this command: python3 -m unittest discover tests</ul>
 
 <ul>Test files by using this command: python3 -m unittest tests/test_models/test_base_model.py</ul>
+	
+```bash
+root@c698ec171c6e:/home/AirBnB_clone# ./console.py
+(hbnb) help
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+##### all
+```bash
+(hbnb) User.all()
+[[User] (246c227a-d5c1-403d-9bc7-6a47bb9f0f68) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611352), 'updated_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611363), 'password': '63a9f0ea7bb98050796b649e85481845', 'email': 'airbnb@mail.com', 'id': '246c227a-d5c1-403d-9bc7-6a47bb9f0f68'}, [User] (38f22813-2753-4d42-b37c-57a17f1e4f88) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848279), 'updated_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848291), 'password': 'b9be11166d72e9e3ae7fd407165e4bd2', 'email': 'airbnb@mail.com', 'id': '38f22813-2753-4d42-b37c-57a17f1e4f88'}]
+(hbnb) 
+```
+
+##### show
+```bash
+(hbnb) User.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+[User] (246c227a-d5c1-403d-9bc7-6a47bb9f0f68) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611352), 'updated_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611363), 'password': '63a9f0ea7bb98050796b649e85481845', 'email': 'airbnb@mail.com', 'id': '246c227a-d5c1-403d-9bc7-6a47bb9f0f68'}
+(hbnb) User.show("Bar")
+** no instance found **
+(hbnb) 
+```
+
+#### create
+```bash
+(hbnb) create BaseModel
+49faff9a-6318-451f-87b6-910505c55907
+(hbnb) all BaseModel
+["[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'id': '49faff9a-6318-451f-87b6-910505c55907', 'updated_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903300)}"]
+(hbnb)
+```
+
 	
 
 
